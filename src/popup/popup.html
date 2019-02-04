@@ -1,0 +1,32 @@
+<html class="h-full">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get Tweet Replies Handles</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" />
+</head>
+<body class="h-full bg-grey-lightest" style="min-width:500px">
+
+    <div id="content" style="max-width:900px" class="m-auto p-2 pt-4">
+        <form action="javascript:">
+            <div class="flex flex-wrap -mx-3 mb-6">
+                <div class="w-full md:w-1/2 px-3 md:mb-0">
+                    <label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="url">
+                        Tweet URL
+                    </label>
+                    <input class="appearance-none block w-full bg-grey-lighter text-grey-darker border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="url" type="text" placeholder="https://twitter.com/jack/status/20" autofocus="autofocus" />
+                </div>
+                <div class="w-full md:w-1/2 px-3">
+                    <label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" style="display:none">&nbsp;</label>
+                    <input class="appearance-none block w-full bg-indigo-light text-white font-bold border border-grey-lighter rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-grey cursor-pointer focus:text-grey-dark" type="submit" value="Submit" />
+                    <small class="text-grey-dark mt-2 table">A new tab will open, leave it active as Twitter will require active viewport to serve Tweets. You may close the tab after you copy the handles.</small>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script type="text/javascript" src="./assets/popup.js"></script>
+</body>
+</html>
